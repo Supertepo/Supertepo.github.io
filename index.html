@@ -1,1 +1,104 @@
-Hello World
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ara</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style type="text/css">
+        body{
+            animation-name: Color;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+        }
+
+.container{
+    
+    text-align: center;
+    border-top-color : red; 
+}
+
+p{
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    padding: 15%;
+}
+
+button{
+    font-size: xx-large;
+    width: 90px;
+    height: 90px;
+    
+}
+#corazon{ 
+    
+    animation-name: Tamaño;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+#yes{
+    transform: translate(-100%,0);
+}
+
+#no{
+    position: absolute;
+}
+@keyframes Tamaño{
+    0%{transform: scale(1);
+    color: #F8E0E0;}
+    50%{transform: scale(3);
+    color: #FF0000;}
+    100%{transform: scale(1);
+        color: #F8E0E0;}
+
+}
+@keyframes Color{
+    0%{background-color: #CEF6F5;}
+    50%{background-color: #2EFEF7}
+    100%{background-color: #CEF6F5}
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <p>¿Quieres ser mi novia?
+        <br>
+        <br>
+        <span id="corazon" class = "glyphicon glyphicon-heart" ></span>
+        <br>
+        <button class="btn btn-success" id="yes">Si</button>
+        <button class="btn btn-warning" id="no">No</button>
+        </p>
+        
+</div>
+    <script>
+    const yesBtn = document.querySelector('#yes');
+
+      
+        yesBtn.addEventListener("click", myFunction);
+        yesBtn.addEventListener("click", someOtherFunction);
+
+function myFunction() {
+    alert('Hola amorcito <3');
+}
+
+function someOtherFunction() {
+    alert('Vez que si querias')
+}
+        
+        const noBtn = document.querySelector('#no');
+        
+        noBtn.addEventListener('mouseover', function () {
+            const randomX = parseInt(Math.random()*100);
+            const randomY = parseInt(Math.random()*100);
+            noBtn.style.setProperty('top',randomY+'%');
+            noBtn.style.setProperty('left',randomX+'%');
+            noBtn.style.setProperty('transform',`translate(-${randomX}%,-${randomY}%)`);
+        })</script>
+
+</body>
+</html>
