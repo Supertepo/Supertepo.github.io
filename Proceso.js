@@ -3,10 +3,13 @@ const yesBtn = document.querySelector('#yes');
       
         yesBtn.addEventListener("click", myFunction);
         yesBtn.addEventListener("click", someOtherFunction);
-
+        yesBtn.addEventListener("click", ventanaSecundaria);
 function myFunction() {
     alert('Hola amorcito <3');
 }
+function ventanaSecundaria (URL){ 
+    window.open("https://youtu.be/g6r5wAxi470","ventana1","width=120,height=300,scrollbars=NO") 
+ } 
 
 function someOtherFunction() {
     alert('Vez que si querias')
