@@ -17,6 +17,7 @@ font-style: italic;
 padding: 15%;
 }
 
+
 #corazon{ 
 
 animation-name: Tamaño;
@@ -25,14 +26,14 @@ animation-iteration-count: infinite;
 
 }
 #yes{
-font-size: xx-large;
+
 width: 90px;
 height: 90px;
 transform: translate(-100%,0);
 }
 
 #no{
-font-size: xx-large;
+
 width: 90px;
 height: 90px;
 position: absolute;
