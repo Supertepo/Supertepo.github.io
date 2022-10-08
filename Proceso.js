@@ -8,7 +8,7 @@ function myFunction() {
     alert('Hola amorcito <3');
 }
 function ventanaSecundaria (URL){ 
-    window.open("https://youtu.be/g6r5wAxi470","ventana1","width=640,height=480,scrollbars=NO") 
+    window.open("https://youtu.be/g6r5wAxi470") 
  } 
 
 function someOtherFunction() {
