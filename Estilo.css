@@ -1,105 +1,154 @@
-.slide {
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none inside;
+    }
+
+    ul.slider {
     position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    margin-top: 26px;
-}
-.slide-inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: calc( 300px + 3em);
-}
-.slide-open:checked + .slide-item {
-    position: static;
-    opacity: 100;
-}
-.slide-item {
-    position: absolute;
+    }
+
+    ul.slider li {
     opacity: 0;
-    -webkit-transition: opacity 0.6s ease-out;
-    transition: opacity 0.6s ease-out;
-}
-.slide-item img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-}
-.slide-control {
-    background: rgba(0, 0, 0, 0.28);
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-    font-size: 40px;
-    height: 40px;
-    line-height: 35px;
+    transition: opacity .5s;
     position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    cursor: pointer;
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    text-align: center;
-    width: 40px;
-    z-index: 10;
-}
-.slide-control.prev {
-    left: 2%;
-}
-.slide-control.next {
-    right: 2%;
-}
-.slide-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
-}
-#slide-1:checked ~ .control-1,
-#slide-2:checked ~ .control-2,
-#slide-3:checked ~ .control-3 {
-    display: block;
-}
-.slide-indicador {
-    list-style: none;
+    left: 0px;
+    top: 0px;
+    margin: 50px;
+    padding: 50px;
+    border: 2px solid red;
+    background: #fff;
+    }
+
+    ul.slider li:first-child {
+        opacity: 1;
+    }
+
+    ul.slider li:target {
+        opacity: 1;
+    }
+
+    nav {
+    position: relative;
+    top: 200px;
+    left: 50px;
+    }
+
+
+    /* 
+       A partir de aqu� el CSS es puro dise�o visual para hacer una versi�n m�s vistosa.
+       Puedes comentarlo si te resulta m�s f�cil estudiar el ejemplo en su versi�n m�s sencilla
+
+    */
+
+
+    body, html {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+    }
+
+    ul, li {
+    box-sizing: border-box;
+    }
+
+    ul.slider {
+    padding: 30px;
+    }
+
+    ul.slider li {
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
+    border: 0;
+    background-color: gray;
+    opacity: 0;
+    transition: opacity .5s;
+    padding-top: 30vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: calc( 1.5rem + 1vw );
+    text-align: center;
+    }
+
+    #slide1 {
+    background-color: #00324b;
+    color: #fff;
+    }
+
+    #slide2 {
+    background-color: #65bce8;
+    color: #00324b;
+    }
+
+    #slide3 {
+    background-color: #f90;
+    color: #00324b;
+    }
+
+    #slide4 {
+    background-color: #00324b;
+    color: #65bce8;
+    }
+
+    #slide5 {
+    background-color: #65bce8;
+    color: #00324b;
+    }
+
+    nav {
+    width: 100vw;
     position: absolute;
-    bottom: 2%;
-    left: 0;
+    top: auto;
     right: 0;
+    bottom: 0;
+    left: 0;
+    background: #f1f2f3;
+    }
+
+    nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+
+    nav ul li {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    }
+
+    nav a {
+    font-size: calc( 1.2rem + 1vw );
+    text-decoration: none;
+    font-weight: bold;
+    color: #00324b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    flex-grow: 1;
     text-align: center;
-    z-index: 10;
-}
-.slide-indicador li {
-    display: inline-block;
-    margin: 0 5px;
-}
-.slide-circulo {
-    color: #828282;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
-}
-.slide-circulo:hover {
-    color: #aaaaaa;
-}
-#slide-1:checked ~ .control-1 ~ .slide-indicador 
-     li:nth-child(1) .slide-circulo,
-#slide-2:checked ~ .control-2 ~ .slide-indicador 
-      li:nth-child(2) .slide-circulo,
-#slide-3:checked ~ .control-3 ~ .slide-indicador 
-      li:nth-child(3) .slide-circulo {
-    color: #428bca;
-}
-#titulo {
-    width: 100%;
-    position: absolute;
-    padding: 0px;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Open Sans', sans-serif;
-    z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
-         -1px 0px 2px rgba(255, 255, 255, 0);
-}
+    border-top: 5px solid #00324b;
+    border-right: 1px solid #00324b;
+    flex-wrap: wrap;
+    position: relative;
+    }
+
+    nav li:last-child a {
+    border-right: 0;
+    }
+
+    nav a:hover {
+    background-color: #00324b;
+    color: #fff;
+    border-top-color: #65bce8;
+    }
+
+    nav a:active {
+    border-top-color: #f90;
+    background: #f90;
+    color: #00324b;
+    }
