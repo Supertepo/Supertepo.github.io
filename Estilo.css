@@ -49,7 +49,10 @@ ul, li {
     height: 100vh;
     overflow:hidden;
     }
-
+img{
+    align-items: center;
+    position: absolute;
+}
     ul, li {
     box-sizing: border-box;
     }
