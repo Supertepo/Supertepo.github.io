@@ -49,9 +49,7 @@ ul, li {
     height: 100vh;
     overflow:hidden;
     }
-img{
-    position: absolute;
-}
+
     ul, li {
     box-sizing: border-box;
     }
