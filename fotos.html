@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +8,46 @@
     <link rel="shortcut icon" href="/Recursos/Arita.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="Estilo.css">
 </head>
 <body>
     <div class="container">
-       
+        <div class="slide">
+            <div class="slide-inner">
+                <input class="slide-open" type="radio" id="slide-1" 
+                      name="slide" aria-hidden="true" hidden="" checked="checked">
+                <div class="slide-item">
+                    <img src="https://lh3.googleusercontent.com/cNmXxNr7cjJzhr-PMxNqD8f7xlRleAK9J_itW9GMlGahOgKDfj6H0kDWrZZkSxDnYJrPW98Kw00q9llb7fmAToirhkUA47c-DmDSGTVFCe7D87hSfGW8vr2fVHoAnPwQmNbwEjAYQnANfvJVpB-Q_wmbvocSFs8N7VG1IO2_tDWE7uqHw9aRhA0_kBipIQseWnJfbn5wZtiz-Kr4oy1AZ3eCXmWsxlXxmeVIx8rdsQv730WXQD2chbvwAW5aGZvXZeGe7s5eZIVy8UOEX71wh56uznDGtrnO_A2CPLNq6cpQwtzvd1EUohV1BFQ9LcwsEBZgDEcIppBWxzIr2fsPq1HqYt7_qZ-YHbAO63Q1icV8leMFh5rOl-ANO29iBDFiLAB52ciw47i4rLaNmiUABQBzWEpd7_Tx5MvbxrEsm3kLObF6MLr71GknKTNnLtd1qDToL_9hBy6L5fC1bmHz1Cpkkh24iM65BnkBkKgzzS_O1HOiGFwXXYesoW81UT_PtKOQRRmvvrzdLVDrnsIiveoDenYZtcnppXoZ2NWuDhEmpyreXUTI0Yyr70CLzIMR1YWU05IitAQnPlCvRhCPKMC5-rfgmstR5aoADU4qROXPaUBKkwC3CKRt3fg3Pd3XEZCeakGobkHLsIPBePFoKVKeXIc3xTVOj7P0ZxBfN3E4goSzDXyE6cPMZD_zbGS4GEtBKMM91cnox2-EOwqvH6TLsGwDcO9fR4wU7Q7Riv6_ufnK0SBcIsVZx5BennwufGzEkxhpD7Fuvo-2LnmysjVPjQZNw7gGAuSRuFgvc_Lo5v_vMp89aT1Mo0sYyJ3RDVKpE5C1ViLhZIANF5rEpqOQhfgIODJFo8zDqbXr5D6G6UhK_3gdbfRhJ83XSjaKQ80nAxQkoCatkrt3LRF9Iv2vDyKdD_6VNPw2zyg=w838-h627-no?authuser=0" >
+                </div>
+                <input class="slide-open" type="radio" id="slide-2" 
+                      name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="https://www.migueltroyano.com/wp-content/uploads/2020/09/postgres_copy.png">
+                </div>
+                <input class="slide-open" type="radio" id="slide-3" 
+                      name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="https://www.migueltroyano.com/wp-content/uploads/2020/09/excel_guardar_como_csv.jpg">
+                </div>
+                <label for="slide-3" class="slide-control prev control-1">‹</label>
+                <label for="slide-2" class="slide-control next control-1">›</label>
+                <label for="slide-1" class="slide-control prev control-2">‹</label>
+                <label for="slide-3" class="slide-control next control-2">›</label>
+                <label for="slide-2" class="slide-control prev control-3">‹</label>
+                <label for="slide-1" class="slide-control next control-3">›</label>
+                <ol class="slide-indicador">
+                    <li>
+                        <label for="slide-1" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-2" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-3" class="slide-circulo">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
     </div>
     <script src="Proceso.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
