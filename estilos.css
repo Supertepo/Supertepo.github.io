@@ -1,7 +1,7 @@
 body{
 background: rgb(243, 189, 189);
 background-size: 0.2em 100%;
-font: 10em/1 Open Sans, Impact;
+font: 5em/1 Open Sans, Impact;
 text-transform: uppercase;
 }
 
@@ -10,8 +10,8 @@ text-align: center;
 border-top-color : red; 
 }
 nav{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    font-style: italic !important;
 }
 nav:hover{
         color: #F2385A;
