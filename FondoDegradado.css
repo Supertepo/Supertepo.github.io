@@ -60,3 +60,6 @@ animation-iteration-count: infinite;
     50%{background-color: #2EFEF7}
     100%{background-color: #CEF6F5}
     }
+    .btn-outline-dark{
+        background-color: white;
+      }
