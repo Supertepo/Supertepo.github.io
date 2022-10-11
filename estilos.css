@@ -12,7 +12,12 @@ border-top-color : red;
 nav{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
-    }
+}
+nav:hover{
+        color: #F2385A;
+}
+
+
 p{
 font-size: xx-large;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -83,4 +88,36 @@ svg {
   width: 100%;
   height: 100%;
   position: absolute;
+}
+img{
+    border: 5px solid; color: black;
+    width: 70%;
+    
+}
+img:hover{
+    border: 10px solid; color: blueviolet;
+    width: 70%;
+}
+#galeria {
+    margin: 1rem auto;
+    width:100%;
+    max-width:960px;
+    column-count: 2;
+    -webkit-column-span:all;
+    column-span:all;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+@media (max-width: 767px) { 
+    #galeria {
+        columns:2;
+    }
+}
+        
+/* Móviles en vertical */
+
+@media (max-width: 480px) {
+    #galeria {
+        columns: 1;
+    }
 }

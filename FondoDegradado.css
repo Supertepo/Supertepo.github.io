@@ -18,6 +18,9 @@ body{
     nav{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-style: italic;
+    }
+    nav:hover{
+            color: #F2385A;
         }
     p{
     font-size: xx-large;
