@@ -9,7 +9,11 @@ text-align: center;
 border-top-color : red; 
 }
 
-
+h1{
+    font-size: 54px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-style: italic;
+}
 p{
 font-size: xx-large;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
