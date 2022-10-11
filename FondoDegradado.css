@@ -1,0 +1,64 @@
+body{
+    animation-name: Color;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+
+body{
+    background: rgb(245, 190, 190);
+    background-size: 0.2em 100%;
+    font: 5em/1 Open Sans, Impact;
+    text-transform: uppercase;
+    }
+    
+    .container{
+    text-align: center;
+    border-top-color : red; 
+    }
+    nav{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+        }
+    p{
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    padding: 15%;
+    }
+    
+    
+    #corazon{ 
+    
+    animation-name: Tamaño;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+    }
+    #yes{
+    
+    width: 90px;
+    height: 90px;
+    transform: translate(-100%,0);
+    }
+    
+    #no{
+    
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    }
+    @keyframes Tamaño{
+    0%{transform: scale(1);
+    color: #F8E0E0;}
+    50%{transform: scale(3);
+    color: #FF0000;}
+    100%{transform: scale(1);
+    color: #F8E0E0;}
+    
+    }
+
+@keyframes Color{
+    0%{background-color: #CEF6F5;}
+    50%{background-color: #2EFEF7}
+    100%{background-color: #CEF6F5}
+    }
