@@ -2,11 +2,9 @@ body{
     animation-name: Color;
 animation-duration: 3s;
 animation-iteration-count: infinite;
-background: #111;
 background-size: 0.2em 100%;
 font: 5em/1 Open Sans, Impact;
 text-transform: uppercase;
-margin: 0;
 }
 
 .container{
